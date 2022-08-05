@@ -1,0 +1,115 @@
+html {
+  font-family: Lato;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+   margin: 0 auto; 
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(204, 147, 147);
+}
+
+ .lastResult {
+  color: white;
+  padding: 3px;
+} 
+
+.container {
+  z-index: 3;
+  min-height: 20vh;
+  min-width: 20vw;
+  /* max-width: 90vw; */
+  padding: 20px 50px;
+  background: rgb(215, 159, 159);
+  display: flex;
+  justify-content: center;
+  align-items: start; 
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: justify;
+  white-space: pre;
+}
+
+.form {
+  display: grid;
+
+  grid-template-areas: "a a a""b b c""b b c";
+
+
+}
+
+p {
+  grid-area: a;
+  margin-bottom: 5px;
+}
+
+.textarea {
+  grid-area: b;
+  height: 22px;
+}
+
+.btn-Submit {
+  cursor: pointer;
+  grid-area: c;
+  /* justify-self:end; */
+  /* text-align: justify; */
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 400;
+  background: rgba(237, 197, 197, 0.496);
+  margin-left: 5px;
+  /* height: 20px; */
+  padding: 4px;
+}
+
+
+.hacked {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 10em;
+  width: 20em;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  color: rgb(255, 42, 42);
+  font-size: 30px;
+  font-weight: 600;
+  border: 4px rgb(243, 114, 114) solid;
+  /* color: rgb(255, 42, 42); */
+
+}
+
+.img {
+  margin: 0;
+}
+.hacked::after {
+  content: "♥";
+}
+
+
+.btn {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* padding: 8px; */
+background: white;
+font-family: sans-serif;
+color: #000;
+  /* height: 200px; */
+  width: 200px;
+  margin: 0;
+  z-index: 2;
+}
